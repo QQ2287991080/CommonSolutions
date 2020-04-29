@@ -175,5 +175,48 @@ namespace 通用类库.图片处理
             finalImage.Save(pdfImg, System.Drawing.Imaging.ImageFormat.Jpeg);
         }
         #endregion
+        #region 图片添加文字水印
+        public void 图片文字水印()
+        {
+            Console.WriteLine("开始导出");
+            string basePath = AppDomain.CurrentDomain.BaseDirectory;
+            string image1 = basePath + "ceshi.jpg";
+            string image2 = basePath + DateTime.Now.ToString("yyyyMMddHHmmssff") + ".jpg";
+            System.Drawing.Image image = System.Drawing.Image.FromFile(image1);
+            var _width = image.Width / 2;
+            var _height = image.Height / 2;
+            //添加文字水印
+            //18款禅静床垫
+            string str = "Length长度";//M18CJD12719618S|MP-191011|00014
+            var strSize = str.Length * 50; //字符串的长度
+            using (FileStream fs = new FileStream(image1, FileMode.Open, FileAccess.Read))
+            {
+                byte[] bytes = new byte[fs.Length];
+                fs.Read(bytes, 0, (int)fs.Length);
+                MemoryStream ms = new MemoryStream(bytes);
+                Bitmap map = new Bitmap(ms);
+                Graphics graphics = Graphics.FromImage(map);
+                graphics.ResetTransform();//重置图像
+                graphics.TranslateTransform(0, image.Height);//设置旋转中心（图片的中心点）
+                var cSqrt = Math.Pow(_width, 2) + Math.Pow(_height, 2);//a平方+b平方=c平方
+                var c = Math.Sqrt(cSqrt);//对角线的长度
+                var cos = (_width / c) * (180 / Math.PI);//获取余弦值
+                graphics.RotateTransform(-float.Parse((90 - cos).ToString()));//设置图片旋转角度，顺时针
+                graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+                Font font = new Font("Source Han Sans CN Light", 50);
+                //水印个数解析
+                var x = c / strSize;
+                var drawCount = (int)Math.Ceiling(x);//获得需要画水印得个数
+                                                     //SolidBrush solidBrush = new SolidBrush(Color.FromArgb(100, 193, 143, 8));
+                SolidBrush solidBrush = new SolidBrush(Color.White);
+                for (int i = 0; i <= drawCount; i++)
+                {
+                    graphics.DrawString(str, font, solidBrush, (strSize * 2) * i + 100, 0);
+                }
+                map.Save(image2, ImageFormat.Jpeg);
+            }
+            Console.WriteLine("导出成功！");
+        }
+        #endregion
     }
 }
