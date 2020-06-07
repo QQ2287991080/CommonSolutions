@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "通用类库", "通用类库\通用类库.csproj", "{75F95AF2-AFD4-4681-93CD-B2E2D928C779}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetCore通用", "dotnetCore通用\dotnetCore通用.csproj", "{77581027-9B19-41B5-BE97-3D9B14B77C95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetCore通用", "dotnetCore通用\dotnetCore通用.csproj", "{77581027-9B19-41B5-BE97-3D9B14B77C95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm", "WinForm\WinForm.csproj", "{D3540800-6593-4130-BCB9-7616A16B3620}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{77581027-9B19-41B5-BE97-3D9B14B77C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77581027-9B19-41B5-BE97-3D9B14B77C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77581027-9B19-41B5-BE97-3D9B14B77C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3540800-6593-4130-BCB9-7616A16B3620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3540800-6593-4130-BCB9-7616A16B3620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3540800-6593-4130-BCB9-7616A16B3620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3540800-6593-4130-BCB9-7616A16B3620}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
