@@ -76,7 +76,9 @@
     <Content Include="数据库Sql\函数用法.sql" />
     <Content Include="文件处理\ffmpeg专区\ffmpeg.exe" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="公共静态方法\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
