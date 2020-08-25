@@ -65,8 +65,11 @@
     <Compile Include="Linq拓展\表达式目录树扩展方法.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="二维码\生成二维码.cs" />
+    <Compile Include="公共静态方法\日期相关.cs" />
     <Compile Include="图片处理\图片处理.cs" />
+    <Compile Include="扩展方法\集合拓展.cs" />
     <Compile Include="文件处理\ffmpeg专区\FfmpegHelper.cs" />
+    <Compile Include="文件处理\文件方法.cs" />
     <Compile Include="文件处理\网络路径.cs" />
     <Compile Include="文档处理\CSVDosc.cs" />
     <Compile Include="文档处理\ExcelDocs.cs" />
@@ -76,9 +79,7 @@
     <Content Include="数据库Sql\函数用法.sql" />
     <Content Include="文件处理\ffmpeg专区\ffmpeg.exe" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="公共静态方法\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
