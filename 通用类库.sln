@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetCore通用", "dotnetC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm", "WinForm\WinForm.csproj", "{D3540800-6593-4130-BCB9-7616A16B3620}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "测试App", "测试App\测试App.csproj", "{04067DF3-1464-4CDD-A664-A07C64784E22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D3540800-6593-4130-BCB9-7616A16B3620}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3540800-6593-4130-BCB9-7616A16B3620}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3540800-6593-4130-BCB9-7616A16B3620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04067DF3-1464-4CDD-A664-A07C64784E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04067DF3-1464-4CDD-A664-A07C64784E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04067DF3-1464-4CDD-A664-A07C64784E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04067DF3-1464-4CDD-A664-A07C64784E22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

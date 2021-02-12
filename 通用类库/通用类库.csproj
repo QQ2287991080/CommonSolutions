@@ -74,6 +74,7 @@
     <Compile Include="文档处理\CSVDosc.cs" />
     <Compile Include="文档处理\ExcelDocs.cs" />
     <Compile Include="文档处理\PdfDocs.cs" />
+    <Compile Include="获取计算机信息\本机IP地址.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="数据库Sql\函数用法.sql" />
